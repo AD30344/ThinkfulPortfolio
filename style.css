@@ -7,17 +7,26 @@ html {
   padding: 270px;
   display:flex;
 
+height:100%;
 }
 
-header {
-  background-color: #000;
-  margin-bottom: 40px;
+.menu{
+  display: flex;
+  justify-content: center;
+}
+header  {
+  display: flex;
+  justify-content: center;
 }
 
 header h1 {
+ 
   color: #fff;
+  display:flex;
   text-align: center;
+ 
   margin: 0;
+ 
   padding-top: 20px;
 }
 
@@ -28,16 +37,20 @@ header nav {
   justify-content: center;
 }
 
+
 header nav ul {
-  justify-content: center;
+  display: flex;
   padding-left: 0;
   list-style: none;
+  justify-content: center;
 }
 
 header nav ul li a {
   color: white;
   text-decoration: none;
   margin: 0 20px 0 0;
+  display: flex;
+  text-align: center;
 }
 
 header nav ul li:last-child a {
@@ -48,10 +61,10 @@ header nav ul li:last-child a {
 
 /* image */
 
-image {
+img{
  
-  max-width: 100%;
-  border-radius: 100%;
+  width: 100%;
+  border-radius: 50%;
   margin: 0px;
   text-align:center;
 }
@@ -98,11 +111,29 @@ form textarea {
   margin-top: 5px;
 }
 
+.email{
+  width:25%;
+  flex-direction:column;
+  display:flex;
+  margin-bottom:10px;
+}
+
+.name{
+  width:25%;
+  flex-direction:column;
+  display:flex;
+}
+
+.comments{
+  width:50%;
+  flex-direction:column;
+  display:flex;
+  margin-bottom:10px;
+}
+
 /*Header/Footer*/
 
-head {
-  text-align: center;
-}
+
 
 header {
   font-family: 'Gochi Hand';
