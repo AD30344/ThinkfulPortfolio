@@ -1,35 +1,148 @@
-/* Background */
+body {
+  margin: 0;
+}
 
 html {
-  background-color: BlanchedAlmond;
+  background-color: #daecec;
   padding: 270px;
-  
+  display:flex;
+
 }
+
+header {
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+/* Nav Bar */
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+
+
 /* image */
 
-img {
-  width: 100%;
-  height: 480px;
-  margin-top: 0px;
+image {
+ 
+  max-width: 100%;
+  border-radius: 100%;
+  margin: 0px;
+  text-align:center;
 }
 
 /* Text Styling */
 
 h1, h2, h3 {
+  justify-content: center;
   font-family: 'Rockwell', neo sans;
   font-size: 48px;
-  color: DarkCyan;
+  color: rgb(0, 21, 139);
   text-align: center;
 }
 
 p, li {
-  font-family: 'Clarendon', cursive;
+  font-family: 'Verdana', cursive;
   font-size: 22px;
-  color: steelblue;
+  color: rgb(53, 30, 255);
 }
 
 /* links for contact info */
 
-a { color: dodgerblue; }
-a:hover{ color:purple; }
+a { color: rgb(53, 30, 255); }
+a:hover{ color:rgb(126, 55, 126); }
+
+
+/*Submit button and Comment Box*/
+form label {
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 5px;
+padding: 0%;
+  color: gray;
+  font-family: arial;
+}
+
+form textarea {
+  justify-content: space-around;
+ 
+  width: 80%;
+  color: #000;
+  padding: 5 5 5 5px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/*Header/Footer*/
+
+head {
+  text-align: center;
+}
+
+header {
+  font-family: 'Gochi Hand';
+  font-size: 80px;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  color: white;
+  background-color: darkblue;
+ 
+}
+
+footer h3{
+  text-align: center;
+}
+
+
+/* Media Queries*/
+
+@media all and (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
+
+
+
 

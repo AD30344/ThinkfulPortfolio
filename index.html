@@ -1,73 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    
-    <title>Aaron's Portfolio</title>
-    
-    <link rel="stylesheet"  type="text/css" href= "style.css"/>
 
-  </head>
-    
-    <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
 
-   <main>
+  <title>Aaron's Portfolio</title>
 
-    <!-- Profile Pic -->
-       <img src="https://i.imgur.com/p26Udxu.jpg" alt="Portfolio Picture" />
-    
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <!-- Introduction -->
-      <h1>Hi, I am Aaron Davis!</h1>
-    <p>I am a <strong>Web Developer</strong> from Atlanta, Georgia!</p>
-      <p>As a former Media Production student I love to;</p>
+</head>
 
-      <ul>
-        <li>Build code piece by piece like scenes are shot for a movie</li>
-        <li>Use creativity to create a masterpiece! </li>
-        <li>Watch movies and short films</li>
-        <li>I love giving back and teaching others how to get into the IT industry!</li>
-      </ul>
+<body>
+  <header>
+    Aaron Davis
+    <div class='head'>
+      <nav>
+        <ul id="menu">
+          
+          <li><a href="#About Me">About Me</a></li>
+          <li><a href="#Contact Me">Contact Me</a></li>
+          <li><a href="#Projects">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <p>Please take a look at my website and feel free to contact me!</p>
-  </main>
+  <!-- Profile Pic -->
+  
+  <div class = "image">
+    <img src="https://i.imgur.com/EAWyYQP.jpg?1" alt="Portfolio Picture">
+  </div>
+  <!-- Introduction -->
+  <main>
+  <h1>Hi, I am Aaron Davis!</h1>
+  <p>I am a <strong>Web Developer</strong> from Atlanta, Georgia!</p>
+  <p>As a former Media Production student I love to;</p>
 
+  <ul>
+    <li>Build code just like movie scenes!</li>
+    <li>Use creativity to design code! </li>
+    <li>Watch movies and short films</li>
+    <li>I love giving back and teaching others how to get into the IT industry!</li>
+  </ul>
 
-<hr>
+  <p>Please take a look at my website and feel free to contact me!</p>
 
-<!-- Section About Yourself -->
-    <article>
-      
-    <h2>About Aaron</h2>
-    <p>I have a Programming Undergraduate certificate from the University of Phoenix. Starting my experience in Development in 2018. Having exposure to different parts of this industry helped me gain a love for building software, web pages and applications! I am looking forward to furthering my career in Programming!  </p>
+  <section id = "About Me"></section>
+  <section id = "Contact Me"></section>
+  <section id = "Projects"></section>
+</main>
+  <hr>
 
-    <p>Entering Thinkful was the best move for me considering their expertise in career coaching, mentorship and portfolio building.</p>
-    
+  <!-- Section About Yourself -->
+
+  <article>
+
+    <h2>About Me</h2>
+    <p>I have a Programming Undergraduate certificate from the University of Phoenix. I started my experience in
+      Development in 2018. I am looking to continue my education and continue building my portfolio! </p>
+
+    <p>Entering Thinkful was the best move for me. Considering their expertise in career coaching, mentorship and
+      portfolio building.</p>
+
+    <hr>
+
+    <!-- Project Section-->
+    <h2>Projects</h2>
+    <ul>
+      <li>Black Enterprise App</li>
+      <li>This app is used to find businesses and services that are provided by black people. </li>
+      <li>You can search your area by zip code and choose the type of services that are listed, in order to locate a
+        black-owned.
+        business or service in your area.</li>
+      <li>I was able to build this applcation using HTML, CSS3 and Javascript.</li>
+      <li>Using Git and Github to push and manage repositories online.</li>
+    </ul>
+
   </article>
 
-        
+  <hr>
 
-<hr>
-
-<!-- Contact Info -->
+  <!-- Contact Info -->
 
   <footer>
-<h3>Contact Aaron</h3>
+    <h3>Contact Me</h3>
 
-<p>Feel free to reach out and follow my professional social media accounts. </p>
+    <p>Feel free to reach out and follow my professional social media accounts. </p>
 
-<ol>
-  <li>
-  <a href = "https://www.linkedin.com/in/aaron-davis-650b2875/" target="_blank">LinkedIn</a>
-  
-    <li>
-      <a href = "https://github.com/AD30344" target="_blank">GitHub</a>
+    <ol>
+      <li>
+        <a href="https://www.linkedin.com/in/aaron-davis-650b2875/" target="_blank">LinkedIn</a>
+
+      <li>
+        <a href="https://github.com/AD30344" target="_blank">GitHub</a>
     </ol>
-    
+
+    <!-- the input elements -->
+
+    <form action="https://formspree.io/Yad908king@icloud.com" method="post">
+
+      <div class="name">
+        <label for="user-name">Name</label>
+        <input id="user-name" type="text" name="name">
+      </div>
+
+      <div class="email">
+        <label for="user-name">Email</label>
+        <input id="user-name" type="text" name="email">
+      </div>
+
+      <div class="comments">
+        <textarea id="form-message" name="message" class="comment" placeholder="Enter your comments here!"
+          requiredmaxlength="200"></textarea>
+      </div>
+
+      <div class="group">
+        <button type="submit">submit</button>
+
+      </div>
+
+    </form>
+
   </footer>
 
-        </body>
+
+</body>
 
 
 </html>
