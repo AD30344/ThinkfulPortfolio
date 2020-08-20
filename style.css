@@ -1,140 +1,99 @@
 body {
   margin: 0;
+  
 }
 
 html {
-  background-color: #daecec;
+  background-color: #d9f3f8;
   padding: 270px;
-  display:flex;
-
-height:100%;
+  height: 100%;
 }
 
-.menu{
-  display: flex;
-  justify-content: center;
-}
-
-
-header  {
-  display: flex;
-  justify-content: center;
+header {
+  background-color: #1344d8;
+  margin-bottom: 40px;
+  
+  
 }
 
 header h1 {
- 
+  font-size: 60px;
   color: #fff;
-  display:flex;
   text-align: center;
- 
   margin: 0;
- 
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
-
-header h1{
-  padding: 0;
-  margin: 0;
-  font-weight: 600;
-  font-size: 48px;
-}
-
-header h3{
-  padding: 0;
-  margin: 0;
-}
-
-header nav{
-  padding: 10px 0 0 0;
-  margin: 0;
-}
-
-header nav ul{
+header nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
-
-header nav ul li{
-  padding: 0 15px 0 0;
-  font-weight: 400;
- 
-
-
-}
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  margin: 0 20px 0 0;
-  display: flex;
-  text-align: center;
-}
-
-/* Nav Bar 
 
 header nav ul li a {
-  color: white;
+  font-family: Montserrat;
+  color: #fff;
   text-decoration: none;
   margin: 0 20px 0 0;
-  display: flex;
-  text-align: center;
 }
-
 header nav ul li:last-child a {
   margin-right: 0;
 }
 
-
-
-/* image */
+ /* image */
 
 img{
- 
-  width: 100%;
+  height: 25%;
   border-radius: 50%;
-  margin: 0px;
-  text-align:center;
-}
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-self: auto;
+  }
 
 /* Text Styling */
 
 h1, h2, h3 {
-  justify-content: center;
-  font-family: 'Rockwell', neo sans;
+  font-family: 'Rockwell';
   font-size: 48px;
-  color: rgb(0, 21, 139);
+  color: rgb(25, 0, 139);
   text-align: center;
-}
+  }
 
 p, li {
   font-family: 'Verdana', cursive;
   font-size: 22px;
-  color: rgb(53, 30, 255);
+  color: rgb(25, 0, 139);
 }
 
 /* links for contact info */
 
-a { color: rgb(53, 30, 255); }
-a:hover{ color:rgb(126, 55, 126); }
+a { color: rgb(93, 85, 165); }
+a:hover{ color:rgb(128, 37, 25); }
 
 
 /*Submit button and Comment Box*/
 form label {
-  justify-content: space-around;
+  display: block;
   font-size: 18px;
   margin-bottom: 5px;
-padding: 0%;
-  color: gray;
+  color: rgb(112, 72, 72);
   font-family: arial;
 }
+form input[type=text] {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 
 form textarea {
-  justify-content: space-around;
- 
   width: 80%;
   color: #000;
   padding: 5 5 5 5px;
@@ -142,49 +101,69 @@ form textarea {
   margin-top: 5px;
 }
 
-.email{
-  width:25%;
-  flex-direction:column;
-  display:flex;
-  margin-bottom:10px;
+.contact { align-self: center; }
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(0, 96, 109);
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.name{
-  width:25%;
-  flex-direction:column;
-  display:flex;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
-.comments{
-  width:50%;
-  flex-direction:column;
-  display:flex;
-  margin-bottom:10px;
-}
-
-/*Header/Footer*/
-
-
-
-header {
-  font-family: 'Gochi Hand';
-  font-size: 80px;
-  text-align: center;
-  margin: 0px;
-  padding: 20px;
+input[type=submit] {
+  background-color: #4CAF50;
   color: white;
-  background-color: darkblue;
- 
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 50%;
 }
 
-footer h3{
-  text-align: center;
+input[type=submit]:hover {
+  background-color: #3e3cb4;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.outDiv {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inDiv {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
 }
 
 
-/* Media Queries*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 3500px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -192,19 +171,23 @@ footer h3{
   }
 
   header h1 {
+    font-size: 24px;
     margin: 14px 0;
-    padding-top: 0;
+    padding-top: 6px;
   }
   
   header nav {
-    margin-top: 8px;
+    margin-top: 14px;
   }
 
   header nav ul li a:hover {
-    color: #bdbdbd;
+    color: #004d50;
   }
 }
 
-
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+}
 
 
