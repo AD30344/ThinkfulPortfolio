@@ -3,25 +3,19 @@ body {
   
 }
 
-html {
-  background-color: #d9f3f8;
-  padding: 270px;
-  height: 100%;
-}
 
 header {
-  background-color: #1344d8;
+  background-color: #1745d1;
   margin-bottom: 40px;
-  
-  
 }
 
 header h1 {
-  font-size: 60px;
+  font-size: 62px;
   color: #fff;
   text-align: center;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 20px;
+  font-style:oblique;
 }
 
 header nav {
@@ -36,7 +30,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  font-family: Montserrat;
+  font-family: oblique;
   color: #fff;
   text-decoration: none;
   margin: 0 20px 0 0;
@@ -48,21 +42,24 @@ header nav ul li:last-child a {
  /* image */
 
 img{
-  height: 25%;
+  height: 15%;
   border-radius: 50%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 25%;
   align-self: auto;
+ 
+  
+
   }
 
 /* Text Styling */
 
-h1, h2, h3 {
+ h2, h3 {
   font-family: 'Rockwell';
   font-size: 48px;
-  color: rgb(25, 0, 139);
+  color: rgb(16, 46, 112);
   text-align: center;
   }
 
@@ -85,6 +82,7 @@ form label {
   margin-bottom: 5px;
   color: rgb(112, 72, 72);
   font-family: arial;
+  
 }
 form input[type=text] {
   color: #000;
@@ -101,7 +99,12 @@ form textarea {
   margin-top: 5px;
 }
 
+
+
+
 .contact { align-self: center; }
+
+
 
 
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -139,20 +142,15 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  display: inline-flex;
   justify-content: center;
   align-items: center;
+  width:40%;
+  height:50%;
  }
 
-.outDiv {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
 
 .inDiv {
-  float: left;
-  width: 65%;
+  width: 100%;
   margin-top: 6px;
 }
 
@@ -163,7 +161,7 @@ input[type=submit]:hover {
   clear: both;
 }
 
-@media all and (min-width: 3500px) {
+@media all and (min-width: 600px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -185,7 +183,7 @@ input[type=submit]:hover {
   }
 }
 
-.col-25, .col-75, input[type=submit] {
+.inDiv, .OutDiv, input[type=submit] {
   width: 100%;
   margin-top: 0;
 }
